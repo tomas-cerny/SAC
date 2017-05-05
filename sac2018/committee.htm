@@ -4,77 +4,78 @@
 	<meta charset="UTF-8">
 
 	<style type="text/css">
-		<!--
 		body {
 			scrollbar-face-color:#980033;
 			scrollbar-shadow-color: #8F476C;
 			scrollbar-highlight-color: #FFFFFF;
 			scrollbar-3dlight-color:#8F476C;
-			scrollbar-darkshadow-color: #FFFFFFF;
+			scrollbar-darkshadow-color: #FFFFFF;
 			scrollbar-track-color: #5A0020;
 			scrollbar-arrow-color: #FFFFFF;
 		}
-
-		-->
 		td {
 			font-family: Arial, Helvetica, sans-serif;
-			font-size: 80%;
-			color: "#000000";
+			font-size: 0.8em;
+			color: #000000;
 		}
 	</style>
 </head>
 
 <body bgcolor="#FFEDCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<img src="img/committee.gif" width="544" height="149">
-<p/>
-<div align="center">
 
-	<table id="o_committee" width="67%" border="1" align="center" cellpadding="8" cellspacing="0">
-		<thead><tr align="left" valign="top">
-			<td colspan="3" height="33">
-				<div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><b><font size="3">Organizing
-					Committee</font></b></b></font></div>
-			</td>
-		</tr>
-		</thead>
-	</table>
+<div id="nav">
 
-	<p/>
+</div>
 
+<div style='margin-left:200px;'>
+	<img src="img/committee.gif" width="544" height="149">
+	<br/>
 	<div align="center">
+
+		<table id="o_committee" width="67%" border="1" align="center" cellpadding="8" cellspacing="0">
+			<thead>
+			<tr align="left" valign="top">
+				<td colspan="3" height="33">
+					<p align="center" style="font-size:1.3em;"><b>Organizing Committee</b></p>
+				</td>
+			</tr>
+			</thead>
+		</table>
+
+		<br/>
+
 		<table width="67%" border="1" height="102" align="center" cellpadding="8" cellspacing="0">
 			<tbody><tr align="left" valign="top">
 				<td colspan="3" height="18">
-					<div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><b><font size="3">Steering
-						Committee</font></b></b></font></div>
+					<p align="center" style="font-size:1.3em"><b>Steering Committee</b></p>
 				</td>
 			</tr>
 			<tr align="left" valign="top">
-				<td width="32%" height="33">Barrett R. Bryant<br>
-					University of North Texas<br>
-					Denton, Texas, USA<br>
+				<td width="33%" height="33">Barrett R. Bryant<br/>
+					University of North Texas<br/>
+					Denton, Texas, USA<br/>
 					<a href="mailto:Barrett.Bryant@unt.edu">Barrett.Bryant@unt.edu</a></td>
-				<td width="33%" height="33">Hisham M. Haddad<br>
-					Kennesaw State University<br>
-					Kennesaw, Georgia, USA<b><b><br>
-					</b></b><a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a>
+				<td width="33%" height="33">Hisham M. Haddad<br/>
+					Kennesaw State University<br/>
+					Kennesaw, Georgia, USA<br/>
+					<a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a>
 				</td>
-				<td width="35%" height="33">Sascha Ossowski<br>
-					University Rey Juan Carlos<br>
-					Madrid, Spain<br>
+				<td width="33%" height="33">Sascha Ossowski<br/>
+					University Rey Juan Carlos<br/>
+					Madrid, Spain<br/>
 					<a href="mailto:sascha.ossowski@urjc.es">sascha.ossowski@urjc.es</a></td>
 			</tr>
 			<tr align="left" valign="top">
-				<td width="32%" height="49">Sung Y. Shin<br>
-					South Dakota State University <br>
-					Brookings, South Dakota, USA<br>
+				<td width="33%" height="49">Sung Y. Shin<br/>
+					South Dakota State University <br/>
+					Brookings, South Dakota, USA<br/>
 					<a href="mailto:Sung.Shin@sdstate.edu">Sung.Shin@sdstate.edu</a>
 				</td>
-				<td width="33%" height="49">Roger L. Wainwright <b>(Chair)</b><br>
-					University of Tulsa<br>
-					Tulsa, Oklahoma, USA<br>
-					<a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a> </td>
-				<td width="35%" height="49">
+				<td width="33%" height="49">Roger L. Wainwright <b>(Chair)</b><br/>
+					University of Tulsa<br/>
+					Tulsa, Oklahoma, USA<br/>
+					<a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a></td>
+				<td width="33%" height="49">
 				</td>
 			</tr>
 			</tbody>
@@ -82,148 +83,58 @@
 		<br>
 		<br>
 	</div>
+</div>
 
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    o_c_str = [
+        "Conference Co-Chair; Hisham M. Haddad; Kennesaw State University; Kennesaw, Georgia, USA; hhaddad@kennesaw.edu",
+        "Conference Co-Chair; Roger L. Wainwright; University of Tulsa; Tulsa, Oklahoma, USA; rogerw@utulsa.edu",
+        "Conference Vice-Chair; Richard Chbeir; University of Pau & Pays Adour; France; richard.chbeir@univ-pau.fr",
+        "Program Co-Chair; Dongwan Shin;New Mexico Tech;Socorro, New Mexico, USA;doshin@nmt.edu",
+        "Program Co-Chair; Maria Lencastre;University of Pernambuco;Recife, Pernambuco, Brazil;mlpm@ecomp.poli.br",
+        "Registrar; Hisham M. Haddad;Kennesaw State University;Kennesaw, Georgia, USA;hhaddad@kennesaw.edu",
+        "Tutorials Co-Chair; Ernesto Exposito;University of Pau & Pays Adour;France ;ernesto.exposito@univ-pau.fr",
+        "Tutorials Co-Chair; Philippe Arnould;University of Pau & Pays Adour;France;philippe.arnould@univ-pau.fr",
+        "Publication Chair; Hossain Shahriar;Kennesaw State University;Kennesaw, Georgia, USA;hshahria@kennesaw.edu",
+        "Local Arrangement Co-Chair; Philippe Lopisteguy;University of Pau & Pays Adour;France;lopis@iutbayonne.univ-pau.fr",
+        "Local Arrangement Co-Chair; Haritza Camblong Ruiz;University of País Vasco;Spain;aritza.camblong@ehu.eus",
+        "Treasurer; John Kim;Utica College;Utica, New York, USA;editoracr@gmail.com",
+        "Posters Chair; Chih-Cheng Hung;Kennesaw State University;Kennesaw, Georgia, USA;chung1@kennesaw.edu",
+        "SRC Chair; Armin R. Mikler;University of North Texas;Denton, Texas, USA;mikler@unt.edu",
+        "Publicity Chair; Junyoung Heo;Hansung University;Seoul, Korea;jyheo@hansung.ac.kr"
+    ];
 
-
-	<script
-			src="//code.jquery.com/jquery-3.2.1.min.js"
-			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"></script>
-	<script>
-        function make_table(data, target) {
-            var tbl_body = document.createElement("tbody");
-            var tbl_row;
-            for (i = 0; i < data.length; i++) {
-                if (i % 3 == 0) {
-                    tbl_row = tbl_body.insertRow();
+    function make_table(data, target) {
+        var tbl_body = document.createElement("tbody");
+        var tbl_row;
+        for (i = 0; i < data.length; i++) {
+            if (i % 3 === 0)
+                tbl_row = tbl_body.insertRow();
+            var cell = tbl_row.insertCell();
+            $(cell).attr("width", "33%");
+            var cell_contents = "";
+            var d = data[i].split(";");
+            for (k = 0; k < d.length; k++) {
+                if (k === 0) {
+                    tmp = "<b>" + d[k] + "</b>"
+                } else if (k === d.length - 1) {
+                    tmp = '<a href="mailto:' + d[k] + '">' + d[k] + '</a>'
+                } else {
+                    tmp = d[k]
                 }
-                var cell = tbl_row.insertCell();
-                $(cell).attr("width", "31%");
-                var cell_contents = "";
-                $.each(data[i], function(k, v) {
-                    if (k == "position") {
-                        tmp = "<b>" + v + "</b>"
-                    } else if (k == "email") {
-                        tmp = '<a href="mailto:' + v + '">' + v + '</a>'
-                    } else {
-                        tmp = v
-                    }
-                    cell_contents = cell_contents + tmp + "<br/>"
-                })
-                cell.innerHTML = cell_contents;
+                cell_contents = cell_contents + tmp + "<br/>"
             }
-            $(target).append(tbl_body);
+            cell.innerHTML = cell_contents;
         }
+        $(target).append(tbl_body);
+    }
 
-        o_committee = [
-            {
-                "position":"Conference Co-Chair",
-                "name":"Hisham M. Haddad",
-                "institute": "Kennesaw State University",
-                "institute_addr": "Kennesaw, Georgia, USA",
-                "email": "hhaddad@kennesaw.edu"
-            },
-            {
-                "position":"Conference Co-Chair",
-                "name": "Roger L. Wainwright",
-                "institute": "University of Tulsa",
-                "institute_addr": "Tulsa, Oklahoma, USA",
-                "email": "rogerw@utulsa.edu"
-            },
-            {
-                "position":"Conference Vice-Chair",
-                "name": "Richard Chbeir",
-                "institute": "University of Pau & Pays Adour",
-                "institute_addr": "France",
-                "email": "richard.chbeir@univ-pau.fr"
-            },
-            {
-                "position":"Program Co-Chair",
-                "name": "Dongwan Shin",
-                "institute": "New Mexico Tech",
-                "institute_addr": "Socorro, New Mexico, USA",
-                "email": "doshin@nmt.edu"
-            },
-            {
-                "position":"Program Co-Chair",
-                "name": "Maria Lencastre",
-                "institute": "University of Pernambuco",
-                "institute_addr": "Recife, Pernambuco, Brazil",
-                "email": "mlpm@ecomp.poli.br"
-            },
-            {
-                "position":"Registrar",
-                "name": "Hisham M. Haddad",
-                "institute": "Kennesaw State University",
-                "institute_addr": "Kennesaw, Georgia, USA",
-                "email": "hhaddad@kennesaw.edu"
-            },
-            {
-                "position":"Tutorials Co-Chair",
-                "name": "Ernesto Exposito",
-                "institute": "University of Pau & Pays Adour",
-                "institute_addr": "France ",
-                "email": "ernesto.exposito@univ-pau.fr"
-            },
-            {
-                "position":"Tutorials Co-Chair",
-                "name": "Philippe Arnould",
-                "institute": "University of Pau & Pays Adour",
-                "institute_addr": "France",
-                "email": "philippe.arnould@univ-pau.fr"
-            },
-            {
-                "position":"Publication Chair",
-                "name": "Hossain Shahriar",
-                "institute": "Kennesaw State University",
-                "institute_addr": "Kennesaw, Georgia, USA",
-                "email": "hshahria@kennesaw.edu"
-            },
-            {
-                "position":"Local Arrangement Co-Chair",
-                "name": "Philippe Lopisteguy",
-                "institute": "University of Pau & Pays Adour",
-                "institute_addr": "France",
-                "email": "lopis@iutbayonne.univ-pau.fr"
-            },
-            {
-                "position":"Local Arrangement Co-Chair",
-                "name": "Haritza Camblong Ruiz",
-                "institute": "University of País Vasco",
-                "institute_addr": "Spain",
-                "email": "aritza.camblong@ehu.eus"
-            },
-            {
-                "position":"Treasurer",
-                "name": "John Kim",
-                "institute": "Utica College",
-                "institute_addr": "Utica, New York, USA",
-                "email": "editoracr@gmail.com"
-            },
-            {
-                "position":"Posters Chair",
-                "name": "Chih-Cheng Hung",
-                "institute": "Kennesaw State University",
-                "institute_addr": "Kennesaw, Georgia, USA",
-                "email": "chung1@kennesaw.edu"
-            },
-            {
-                "position":"SRC Chair",
-                "name": "Armin R. Mikler",
-                "institute": "University of North Texas",
-                "institute_addr": "Denton, Texas, USA",
-                "email": "mikler@unt.edu"
-            },
-            {
-                "position":"Publicity Chair",
-                "name": "Junyoung Heo",
-                "institute": "Hansung University",
-                "institute_addr": "Seoul, Korea",
-                "email": "jyheo@hansung.ac.kr"
-            }
-        ]
+    $(function() {
+        $('#nav').load('nav.html');
+        make_table(o_c_str, "#o_committee");
+    });
 
-        $(make_table(o_committee, "#o_committee"));
-	</script>
+</script>
 </body>
 </html>
