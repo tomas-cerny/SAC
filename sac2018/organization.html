@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAC 2018</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('#nav').load('newnav.html');
+            $('#footer').load('newfooter.html');
+        });
+    </script>
+    <style>
+        .col-sm-4,
+        .col-sm-6 {
+            border: 1px solid purple;
+            margin-left: -1px;
+            margin-bottom: -1px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="nav">
+</div>
+
+<div class="section_title">
+    <h2>ORGANIZATION</h2>
+</div>
+
+<div class="container">
+
+    <h3 class="text-center">ORGANIZING COMMITTEE</h3>
+    <div id="o_committee">
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h3 class="text-center">STEERING COMMITTEE</h3>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Barrett R. Bryant<br/>
+                    University of North Texas<br/>
+                    Denton, Texas, USA<br/>
+                <a href="mailto:Barrett.Bryant@unt.edu">Barrett.Bryant@unt.edu</a></p>
+        </div>
+
+        <div class="col-sm-4">
+            <p>Hisham M. Haddad<br/>
+                    Kennesaw State University<br/>
+                    Kennesaw, Georgia, USA<br/>
+                <a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a></p>
+        </div>
+
+        <div class="col-sm-4">
+            <p>Sascha Ossowski<br/>
+                    University Rey Juan Carlos<br/>
+                    Madrid, Spain<br/>
+                    <a href="mailto:sascha.ossowski@urjc.es">sascha.ossowski@urjc.es</a></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Sung Y. Shin<br/>
+                    South Dakota State University <br/>
+                    Brookings, South Dakota, USA<br/>
+                    <a href="mailto:Sung.Shin@sdstate.edu">Sung.Shin@sdstate.edu</a>
+            </p>
+        </div>
+
+        <div class="col-sm-6">
+            <p>Roger L. Wainwright <b>(Chair)</b><br/>
+                    University of Tulsa<br/>
+                    Tulsa, Oklahoma, USA<br/>
+                <a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a></p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="footer">
+</div>
+
+<script>
+    o_c_str = [
+        "Conference Co-Chair; Hisham M. Haddad; Kennesaw State University; Kennesaw, Georgia, USA; hhaddad@kennesaw.edu",
+        "Conference Co-Chair; Roger L. Wainwright; University of Tulsa; Tulsa, Oklahoma, USA; rogerw@utulsa.edu",
+        "Conference Vice-Chair; Richard Chbeir; University of Pau & Pays Adour; France; richard.chbeir@univ-pau.fr",
+        "Program Co-Chair; Dongwan Shin;New Mexico Tech;Socorro, New Mexico, USA;doshin@nmt.edu",
+        "Program Co-Chair; Maria Lencastre;University of Pernambuco;Recife, Pernambuco, Brazil;mlpm@ecomp.poli.br",
+        "Registrar; Hisham M. Haddad;Kennesaw State University;Kennesaw, Georgia, USA;hhaddad@kennesaw.edu",
+        "Tutorials Co-Chair; Ernesto Exposito;University of Pau & Pays Adour;France ;ernesto.exposito@univ-pau.fr",
+        "Tutorials Co-Chair; Philippe Arnould;University of Pau & Pays Adour;France;philippe.arnould@univ-pau.fr",
+        "Publication Chair; Hossain Shahriar;Kennesaw State University;Kennesaw, Georgia, USA;hshahria@kennesaw.edu",
+        "Local Arrangement Co-Chair; Philippe Lopisteguy;University of Pau & Pays Adour;France;lopis@iutbayonne.univ-pau.fr",
+        "Local Arrangement Co-Chair; Haritza Camblong Ruiz;University of País Vasco;Spain;aritza.camblong@ehu.eus",
+        "Treasurer; John Kim;Utica College;Utica, New York, USA;editoracr@gmail.com",
+        "Posters Chair; Chih-Cheng Hung;Kennesaw State University;Kennesaw, Georgia, USA;chung1@kennesaw.edu",
+        "SRC Chair; Armin R. Mikler;University of North Texas;Denton, Texas, USA;mikler@unt.edu",
+        "Publicity Chair; Junyoung Heo;Hansung University;Seoul, Korea;jyheo@hansung.ac.kr"
+    ];
+
+    function make_table(data, target) {
+        var html = '<div class="row">';
+        for (i = 0; i < data.length; i++) {
+            if (i !== 0 && i !== data.length - 1 && i % 3 === 0)
+                html += '</div><div class="row">';
+            var cell_contents = '<div class="col-sm-4"><p>';
+            var d = data[i].split(";");
+            for (k = 0; k < d.length; k++) {
+                if (k === 0) {
+                    tmp = "<b>" + d[k] + "</b>"
+                } else if (k === d.length - 1) {
+                    tmp = '<a href="mailto:' + d[k] + '">' + d[k] + '</a>'
+                } else {
+                    tmp = d[k]
+                }
+                cell_contents = cell_contents + tmp + "<br/>"
+            }
+            cell_contents += '</p></div>';
+            html += cell_contents;
+        }
+        html += '</div>';
+        $(target).html(html);
+    }
+
+    $(function() {
+        make_table(o_c_str, "#o_committee");
+    });
+
+</script>
+
+</body>
+</html>
