@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAC 2018</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('#nav').load('nav.html');
+            $('#footer').load('footer.html');
+        });
+    </script>
+    <style>
+        table {
+            font-size: 1.5em;
+        }
+        td {
+            padding: 1px 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="nav">
+</div>
+
+<div class="section_title">
+    <h2>TECHNICAL TRACKS</h2>
+</div>
+
+<div class="container">
+
+    <p>SAC 2017 Technical Tracks - SAC 2018 Tracks will be displayed around June 2017.</p>
+    <div id="tracks"></div>
+
+</div>
+
+<script>
+    function make_table(result, target) {
+        var html = '<table class="table-bordered">';
+        var data = result.split('\n');
+        for (var i = 0; i < data.length; i++) {
+            var d = data[i].split(",");
+            if (d.length !== 3)
+                continue;
+            html += '<tr>';
+            html += '<td>' + (i + 1) + '.</td>';
+            html += '<td>' + d[0] + '</td>';
+            html += '<td><a href="' + d[2] + '">' + d[1] + '</a></td>';
+            html += '</tr>';
+        }
+        html += '</table>';
+        $(target).html(html);
+    }
+    $(function() {
+        $.ajax({url: "data2018/tracks.csv", success: function(result){
+            make_table(result, "#tracks");
+        }});
+    });
+
+</script>
+
+</body>
+</html>

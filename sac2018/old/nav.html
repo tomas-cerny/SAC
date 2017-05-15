@@ -1,0 +1,99 @@
+<style>
+    .nav-fixed-left {
+        position: fixed;
+        top:0;
+        bottom:0;
+        left: 0;
+        width: 200px;
+        background-color: #8000FF;
+    }
+    nav a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    nav a:visited {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+    nav a:active {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+    nav .menu_item {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    nav .menu_big {
+        font-size: 15pt;
+    }
+    nav a.disabled {
+        pointer-events: none;
+        cursor: default;
+        color: darkgrey;
+    }
+</style>
+
+<nav class="nav-fixed-left">
+
+    <!-- facebook share -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div style="height:80px;"></div>
+
+    <div align="center">
+        <p align="center"><a href="http://www.acm.org/sigapp/" target="_blank">
+            <img src="../img/SIGAPP-LOGO-Small.jpg" alt="SIGAPP" width="108" height="27" border="0"></a></p>
+
+        <p class="menu_item"><a href="index.htm">Welcome</a></p>
+        <p class="menu_item"><a href="committee.htm">Organizing Committee</a></p>
+
+        <p class="menu_item"><a class="disabled" href="tracks15.htm" target="main">Technical Tracks</a></p>
+        <p class="menu_item"><a class="disabled" href="program15.htm" target="main">Technical Program</a></p>
+        <p class="menu_item"><a class="disabled" href="posters15.htm" target="main">Posters Program</a></p>
+        <p class="menu_item"><a class="disabled" href="tutorials15.htm" target="main">Tutorials Program</a></p>
+        <p class="menu_item"><a class="disabled" href="src15.htm" target="main">SRC Program</a></p>
+        <p class="menu_item"><a class="disabled" href="keynotes15.htm" target="main">Keynote Speakers</a></p>
+        <p class="menu_item"><a class="disabled" href="registration15.htm" target="main">Registration</a></p>
+        <p class="menu_item menu_big"><a class="disabled" href="Paper-SubmissionUploadPage.htm" target="_blank">
+            Regular Paper <br/>
+                Submission Page</a></p>
+        <p class="menu_item menu_big"><a class="disabled" href="SRC-SubmissionUploadPage.htm" target="_blank">
+            SRC<br/>
+                Submission Page</a></p>
+        <p class="menu_item"><a href="downloads.html" target="main">Downloads</a></p>
+        <p class="menu_item"><a class="disabled" href="Travel15.htm" target="main">Travel Information</a></p>
+
+        <p class="menu_item"><a href="http://www.sigapp.org/stawards.html" target="_blank">SIGAPP
+            Travel Awards</a></p>
+        <p class="menu_item"><a class="disabled" href="SAC_STATS.pdf" target="_blank">SAC Stats</a><br/>
+            <a class="disabled" href="SAC_History.pdf" target="_blank">SAC History</a></p>
+
+        <!-- facebook share -->
+        <div class="fb-share-button" data-href="https://www.sigapp.org/sac/sac2018/"
+             data-layout="button" data-size="large" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank"
+               href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.sigapp.org%2Fsac%2Fsac2018%2F&amp;src=sdkpreparse">
+                Share</a>
+        </div>
+
+        <!-- Linkedin share -->
+        <p>
+            <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+            <script type="IN/Share" data-url="https://www.sigapp.org/sac/sac2018/"></script>
+        </p>
+    </div>
+</nav>
