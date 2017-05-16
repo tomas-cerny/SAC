@@ -16,6 +16,7 @@
     <style>
         table {
             font-size: 1.5em;
+            background-color: #ffffff;
         }
         td {
             padding: 1px 10px;
@@ -29,14 +30,17 @@
 </div>
 
 <div class="section_title">
-    <h2>TECHNICAL TRACKS</h2>
+    <h1><span class="initial">T</span>ECHNICAL TRACKS <span class="	glyphicon glyphicon-th"></span></h1>
 </div>
 
 <div class="container">
+    <h4 class="warning"><span class="glyphicon glyphicon-exclamation-sign"></span> SAC 2018 Tracks will be displayed around June 2017.</h4>
+</div>
 
-    <p>SAC 2017 Technical Tracks - SAC 2018 Tracks will be displayed around June 2017.</p>
+<div class="container">
+    <h3 class="subtitle">SAC 2017 TECHNICAL TRACKS</h3>
+
     <div id="tracks"></div>
-
 </div>
 
 <script>
@@ -50,7 +54,8 @@
             html += '<tr>';
             html += '<td>' + (i + 1) + '.</td>';
             html += '<td>' + d[0] + '</td>';
-            html += '<td><a href="' + d[2] + '">' + d[1] + '</a></td>';
+            //html += '<td><a href="' + d[2] + '">' + d[1] + '</a></td>';
+            html += '<td>' + d[1] + '</td>';
             html += '</tr>';
         }
         html += '</table>';

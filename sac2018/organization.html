@@ -5,20 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-        $(function() {
-            $('#nav').load('nav.html');
-            $('#footer').load('footer.html');
-        });
-    </script>
+
     <style>
         .col-sm-4,
         .col-sm-6 {
             border: 1px solid purple;
             margin-left: -1px;
             margin-bottom: -1px;
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -29,65 +23,14 @@
 </div>
 
 <div class="section_title">
-    <h2>ORGANIZATION</h2>
+    <h1 class="title"><span class="initial">O</span>RGANIZATION <span class="glyphicon glyphicon-user"></span></h1>
 </div>
 
 <div class="container">
+    <h3 class="subtitle">ORGANIZING COMMITTEE</h3>
 
-    <h3>ORGANIZING COMMITTEE</h3>
     <div id="o_committee">
-
     </div>
-
-</div>
-
-<div class="container">
-
-    <h3>STEERING COMMITTEE</h3>
-    <div class="row">
-        <div class="col-sm-4">
-            <p>Barrett R. Bryant<br/>
-                    University of North Texas<br/>
-                    Denton, Texas, USA<br/>
-                <a href="mailto:Barrett.Bryant@unt.edu">Barrett.Bryant@unt.edu</a></p>
-        </div>
-
-        <div class="col-sm-4">
-            <p>Hisham M. Haddad<br/>
-                    Kennesaw State University<br/>
-                    Kennesaw, Georgia, USA<br/>
-                <a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a></p>
-        </div>
-
-        <div class="col-sm-4">
-            <p>Sascha Ossowski<br/>
-                    University Rey Juan Carlos<br/>
-                    Madrid, Spain<br/>
-                    <a href="mailto:sascha.ossowski@urjc.es">sascha.ossowski@urjc.es</a></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-6">
-            <p>Sung Y. Shin<br/>
-                    South Dakota State University <br/>
-                    Brookings, South Dakota, USA<br/>
-                    <a href="mailto:Sung.Shin@sdstate.edu">Sung.Shin@sdstate.edu</a>
-            </p>
-        </div>
-
-        <div class="col-sm-6">
-            <p>Roger L. Wainwright <b>(Chair)</b><br/>
-                    University of Tulsa<br/>
-                    Tulsa, Oklahoma, USA<br/>
-                <a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a></p>
-        </div>
-
-    </div>
-
-</div>
-
-<div id="footer">
 </div>
 
 <script>
@@ -108,7 +51,61 @@
         "SRC Chair; Armin R. Mikler;University of North Texas;Denton, Texas, USA;mikler@unt.edu",
         "Publicity Chair; Junyoung Heo;Hansung University;Seoul, Korea;jyheo@hansung.ac.kr"
     ];
+</script>
 
+
+<div class="container">
+    <h3 class="subtitle">STEERING COMMITTEE</h3>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Barrett R. Bryant<br/>
+                University of North Texas<br/>
+                Denton, Texas, USA<br/>
+                <a href="mailto:Barrett.Bryant@unt.edu">Barrett.Bryant@unt.edu</a></p>
+        </div>
+
+        <div class="col-sm-4">
+            <p>Hisham M. Haddad<br/>
+                Kennesaw State University<br/>
+                Kennesaw, Georgia, USA<br/>
+                <a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a></p>
+        </div>
+
+        <div class="col-sm-4">
+            <p>Sascha Ossowski<br/>
+                University Rey Juan Carlos<br/>
+                Madrid, Spain<br/>
+                <a href="mailto:sascha.ossowski@urjc.es">sascha.ossowski@urjc.es</a></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <p>Sung Y. Shin<br/>
+                South Dakota State University <br/>
+                Brookings, South Dakota, USA<br/>
+                <a href="mailto:Sung.Shin@sdstate.edu">Sung.Shin@sdstate.edu</a>
+            </p>
+        </div>
+
+        <div class="col-sm-6">
+            <p>Roger L. Wainwright <b>(Chair)</b><br/>
+                University of Tulsa<br/>
+                Tulsa, Oklahoma, USA<br/>
+                <a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a></p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="footer">
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
     function make_table(data, target) {
         var html = '<div class="row">';
         for (i = 0; i < data.length; i++) {
@@ -134,9 +131,11 @@
     }
 
     $(function() {
+        $('#nav').load('nav.html');
+        $('#footer').load('footer.html');
+
         make_table(o_c_str, "#o_committee");
     });
-
 </script>
 
 </body>
