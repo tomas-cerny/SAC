@@ -29,17 +29,11 @@
 <div class="container">
     <h3 class="subtitle">SAC 2018 TECHNICAL TRACKS</h3>
 
-    <h4 class="warning"><span class="glyphicon glyphicon-exclamation-sign"></span> SAC 2018 Tracks will be displayed around June 2017.</h4>
+    <!--<h4 class="warning">
+    <span class="glyphicon glyphicon-exclamation-sign"></span> SAC 2018 Tracks will be displayed around June 2017.</h4>-->
 
     <div id="tracks"></div>
 </div>
-
-<div class="container">
-    <h3 class="subtitle">SAC 2017 TECHNICAL TRACKS</h3>
-
-    <div id="tracks2017"></div>
-</div>
-
 
 <div id="footer">
 </div>
@@ -56,9 +50,12 @@
                 continue;
             html += '<tr>';
             html += '<td>' + (i + 1) + '.</td>';
-            html += '<td>' + d[0] + '</td>';
-            html += '<td><a href="' + d[2] + '">' + d[1] + '</a></td>';
-            //html += '<td>' + d[1] + '</td>';
+            if (d[2].length > 0) {
+                html += '<td><a href="' + d[2] + '">' + d[0] + '</a></td>';
+            } else {
+                html += '<td>' + d[0] + '</td>';
+            }
+            html += '<td>' + d[1] + '</td>';
             html += '</tr>';
         }
         html += '</table>';
@@ -70,10 +67,6 @@
 
         $.ajax({url: "data2018/tracks2018.csv", success: function(result){
             make_table(result, "#tracks");
-        }});
-
-        $.ajax({url: "data2018/tracks2017.csv", success: function(result){
-            make_table(result, "#tracks2017");
         }});
     });
 
