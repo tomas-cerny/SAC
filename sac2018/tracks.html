@@ -50,7 +50,7 @@
                 continue;
             html += '<tr>';
             html += '<td>' + (i + 1) + '.</td>';
-            if (d[2].length > 0) {
+            if (d[2].trim().length > 0) {
                 html += '<td><a href="' + d[2] + '">' + d[0] + '</a></td>';
             } else {
                 html += '<td>' + d[0] + '</td>';
