@@ -1,43 +1,40 @@
-Advances in Computational Biomedical Imaging   ;  COMBI ;
-Bioinformatics   ;  BIO ;
-Business Process Management & Enterprise Architecture   ;  BPMEA;
-Cloud Computing   ;  CC;
-Cognitive Computing   ;  CoCo; https://coco.fbk.eu/sac2018/
-Collective Adaptive Systems   ;  CAS;
-Computational Intelligence and Video & Image Analysis   ;  CIVIA;
-Computational Methods in Population Health   ;  CMPH;
-Computer Security   ;  SEC;
-Cyber-Physical Systems   ;  CPS;
-Data Streams   ;  DS; http://www.cs.waikato.ac.nz/~abifet/SAC2018
-Database Theory, Technology, and Applications   ;  DTTA ; http://www.lau.edu.lb/news-events/conferences/sac2018/
-Intelligent Robotics and Multi-Agent Systems    ;  IRMAS; http://ap.isr.uc.pt/events/sac2018-irmas/
-Knowledge Representation and Reasoning   ;  KRR;
-Mobile Computing and Applications   ;  MCA; http://www.comp.polyu.edu.hk/~sac18mca
-Object Oriented Programming Languages and Systems   ;  OOPS;
-Operating Systems   ;  OS; https://sites.google.com/site/sac2018os/
-Privacy by Design in Practice  ;  ; http://www.legalinf.de/pbd2018
-Programming Languages   ;  PL;
-Recommender Systems: Theory, User Interactions and Applications   ;  RS;
-Requirements Engineering   ;  RE;http://www.cin.ufpe.br/~sac18-re/
-Service-Oriented Architecture and Programming   ;  SOAP; http://sac-soap.sdu.dk/soap2018/
-Social Network and Media Analysis   ;  SONAMA; http://www.agape.hanyang.ac.kr/sonama2018
-Software Architecture: Theory, Technology, and Applications   ;  SA-TTA;
-Software Platforms   ;  SP;https://sites.google.com/site/acmsac18sp/
-Software-intensive Systems-of-Systems   ;  SiSoS;
-Usability Engineering  ;;
-Web Technologies    ;  WT;
-Internet of Things   ;  IoT;
-Dependable, Adaptive, and Secure Distributed Systems    ;  DADS;
-Data Mining   ;  DM;
-Networking    ;  NT;
-Practical Aspects of High-Level Parallel Programming   ;  PAPP; http://frederic.loulergue.eu/PAPP2018
-Software Engineering    ;  SE;
-Semantic Web and Application   ;  SWA;
-Software Verification and Testing   ;  SVT;
-Information Access and Retrieval   ;  IAR;
-Selected Areas of Wireless Communications and Networking   ;  WCN;
-Variability and Software Product Line Engineering   ;  VSPLE;
-Middleware and Enterprise Application Software   ;  MEAS;
-Knowledge Extraction from Geographical Data  ; KEGeoD; https://kegeod.sciencesconf.org
-Smart Human Computer Interaction   ;  HCI; http://hci.knu.ac.kr/
-Embedded Systems track; ES;
+Cloud Computing ;CC;
+Cognitive Computing ;CoCo;	 https://coco.fbk.eu/sac2018/
+Collective Adaptive Systems ;CAS;
+Computational Intelligence and Video & Image Analysis ;CIVIA;
+Computational Methods in Population Health ;CMPH;
+Computer Security ;SEC;
+Cyber-Physical Systems ;CPS;	
+Data Mining ;DM;
+Data Streams ;DS;	 http://www.cs.waikato.ac.nz/~abifet/SAC2018
+Database Theory, Technology, and Applications ;DTTA;	 http://www.lau.edu.lb/news-events/conferences/sac2018/
+Dependable, Adaptive, and Secure Distributed Systems ;DADS;
+Embedded Systems ;ES;
+Information Access and Retrieval ;IAR;
+Intelligent Robotics and Multi-Agent Systems ;IRMAS;	 http://ap.isr.uc.pt/events/sac2018-irmas/
+Internet of Things ;IoT;
+Knowledge Extraction from Geographical Data ;KEGeoD;	 https://kegeod.sciencesconf.org
+Knowledge Representation and Reasoning ;KRR;
+Middleware and Enterprise Application Software ;MEAS;
+Mobile Computing and Applications ;MCA;	 http://www.comp.polyu.edu.hk/~sac18mca
+Networking ;NET;
+Object Oriented Programming Languages and Systems ;OOPS;
+Operating Systems ;OS;	 https://sites.google.com/site/sac2018os/
+Practical Aspects of High-Level Parallel Programming ;PAPP;	 http://frederic.loulergue.eu/PAPP2018
+Privacy by Design in Practice ;PDP;	 http://www.legalinf.de/pbd2018
+Programming Languages ;PL;
+Recommender Systems: Theory, User Interactions and Applications ;RS;
+Requirements Engineering ;RE;	http://www.cin.ufpe.br/~sac18-re/
+Selected Areas of Wireless Communications and Networking ;WCN;	 http://monet.knu.ac.kr/sac2018/wcn.html
+Semantic Web and Application ;SWA;
+Service-Oriented Architecture and Programming ;SOAP;	 http://sac-soap.sdu.dk/soap2018/
+Smart Human Computer Interaction ;HCI;	 http://hci.knu.ac.kr/
+Social Network and Media Analysis ;SONAMA;	 http://www.agape.hanyang.ac.kr/sonama2018
+Software Architecture: Theory, Technology, and Applications ;SA-TTA;
+Software Engineering ;SE;
+Software Platforms ;SP;	https://sites.google.com/site/acmsac18sp/
+Software Verification and Testing ;SVT;
+Software-intensive Systems-of-Systems ;SiSoS;
+Usability Engineering ;UE;
+Variability and Software Product Line Engineering ;VSPLE;
+Web Technologies ;WT;
