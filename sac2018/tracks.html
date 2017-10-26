@@ -51,7 +51,11 @@
             html += '<tr>';
             html += '<td>' + (i + 1) + '.</td>';
             if (d[2].trim().length > 0) {
-                html += '<td><a href="' + d[2] + '">' + d[0] + '</a></td>';
+			    if (d[2].trim() == 'CANCELLED') {
+				    html += '<td><strike>' + d[0] + '</strike><span style="color=red">CANCELLED</span></td>';
+				} else {
+                    html += '<td><a href="' + d[2] + '">' + d[0] + '</a></td>';
+				}
             } else {
                 html += '<td>' + d[0] + '</td>';
             }
