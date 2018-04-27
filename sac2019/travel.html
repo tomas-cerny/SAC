@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAC 2018</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://www.acm.org/images/favicon.ico?v=10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div id="nav">
+</div>
+
+<div class="section_title">
+    <h1 class="title"><span class="initial">T</span>RAVEL INFORMATION
+        <span class="glyphicon glyphicon-globe"></span>
+        <span class="glyphicon glyphicon-plane"></span>
+        <span class="glyphicon glyphicon-bed"></span></h1>
+</div>
+
+<div class="container">
+    <h4 class="warning"><span class="glyphicon glyphicon-exclamation-sign"></span>
+        The information will be displayed around December 2017!</h4>
+
+    <h4>To facilitate your travel, the organizing committee is making every effort to facilitate your travel arrangements to Pau, France.
+        As you plan your travel, please check this page for latest updates. This page provides/will provide the following information:
+    </h4>
+    <ol>
+        <li>Excursions and Hotel Special Rates</li>
+        <li>Visa Information</li>
+        <li>Venue</li>
+        <li>Travel Information</li>
+        <li>Accommodation</li>        
+    </ol>
+  
+</div>
+
+<div id="footer">
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script/imageMapResizer.min.js"></script>
+<script>
+    $(function() {
+        $('#nav').load('nav.html');
+        $('#footer').load('footer.html');
+        $('map').imageMapResize();
+    });
+</script>
+<script src="script/data.js"></script>
+</body>
+</html>

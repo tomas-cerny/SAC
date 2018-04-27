@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAC 2018</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://www.acm.org/images/favicon.ico?v=10">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        th {
+            color: blue;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        td {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="nav">
+</div>
+
+<div class="section_title">
+    <h1 class="title"><span class="initial">P</span>OSTERS PROGRAM <span class="glyphicon glyphicon-book"></span></h1>
+</div>
+
+<div class="container">
+    <h3 class="subtitle">POSTER SESSIONS SCHEDULE</h3>
+
+    <h4 class="warning"><span class="glyphicon glyphicon-exclamation-sign"></span>
+        The schedule will be displayed around January 2019!</h4>
+
+    <!--
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h4 class="list-group-heading">The poster sessions will take place on <b>Wednesday April 11, 2018</b> as follows:</h4>
+
+            <table class="table-bordered" width=90%>
+                <thead>
+                <tr><th>Session & Time</th><th>Theme</th><th>Track Names (# of papers)</th></tr>
+                </thead>
+                <tbody>
+                <tr><th rowspan=3>Session 1: <br/> (10:40am - 12:50pm)</th>
+                    <td>AI & Agents</td><td>ACMCMPH (1), BIO (1), CIVIA (1), CoCo (1), HCI (1), IRMAS (2)</td></tr>
+                    <tr><td>Distributed Systems</td><td>CC (2), CCS(1), DADS (2), IoT (1), MCA (2), NET (2), SONOMA (2), WCN (2)</td></tr>
+                    <tr><td colspan=2>Total: 21 posters</td></tr>
+                <tr><th rowspan=4>Session 2 <br/> (4:00pm - 6:10pm)</th>
+                    <td>Information and Intelligent Systems</td><td>BPMEA (1), DM (1), DS (2), IAR (1), SOAP (1), SWA (1), WT (1)</td></tr>
+                    <tr><td>Software Design and Development</td><td> RE (1), RS (2), SATTA (4), SE (1), SiSoS (2), SP (1), UE (1)</td></tr>
+                    <tr><td>System Software & Security</td><td> ES (1), OOPS (2), OS (3), PDP (2), PL (1)</td></tr>
+                    <tr><td colspan=2>Total: 29 posters</td></tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p class="list-group-text">All posters that belong to the specific track should be presented during the session where it is allocated.
+                Posters must be mounted on poster stands/boards prior to the start of each Session.</p>
+
+            <p class="list-group-text">Poster presnter(s) must be present during the scheduled poster sessions to answer questions about the work.</p>
+
+            <p class="list-group-text">Poster presenter(s) must remove the Poster at the end of each Poster Session.</p>
+
+            <p  class="list-group-text" style="color:red; font-weight: bold;">
+                There will be Best Poster Award and a Prize presented at the conference Banquet on Thursday night!</p>
+        </li>
+    </ul>
+    -->
+</div>
+
+<div class="container">
+    <h3 class="subtitle">POSTER PREPARATION GUIDELINES</h3>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h4 class="list-item-heading">
+                Authors of invited posters are required to print and bring the poster to the conference,
+                following these guidelines:</h4>
+
+            <ol>
+                <li>
+                    Poster materials will be displayed on a <b style="color:blue;">48 inch (121.92 cm) High x 29 inch (75 cm) Wide</b> poster board on which diagrams, graphs, data, pictures and a
+                    small amount of text may be mounted. Thumbtacks and poster board will be provided for mounting materials. No audiovisual equipment is available. Poster
+                    authors may make preprints of their papers available to participants.
+                </li>
+                <li>
+                    Posters should be easily understood. The content of each poster should be clearly divided into sections including introduction, problem definition (or aim of work),
+                    work summary, results, and conclusions.
+                </li>
+                <li>General guidelines are:
+                    <ul>
+                        <li><u>Legibility:</u> The poster should be readable from a distance of at least 5'. Suggested sizes are a minimum graph size of 10" (25 cm), section heading letters
+                            of 3/4" (2 cm), and text and figure lettering not less than 3/8" (1 cm).</li>
+                        <li><u>Heading:</u> A heading label including the title, author name(s), and the primary author(s) address should be included. The recommended lettering size is
+                            1-3/16" (3 cm). This should be mounted at the top of the poster board.</li>
+                        <li><u>Titles:</u> All figures and tables should be titled.</li>
+                        <li><u>Dimensions:</u> The entire size of the poster material(s) is limited to the dimension (48"H x 29"W)</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <h3 class="subtitle">POSTERS CHAIR</h3>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h4 class="list-item-heading">
+                If you any questions regarding the Poster Program, please contact the Posters Chair(s):</h4>
+            <p class="list-item-text" style="margin-left:50px;">
+                <div id="poster_chair"></div>                
+            </p>
+        </li>
+    </ul>
+</div>
+
+<div id="footer">
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        $('#nav').load('nav.html');
+        $('#footer').load('footer.html');
+    });
+</script>
+<script src="script/data.js"></script>
+</body>
+</html>
