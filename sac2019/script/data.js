@@ -5,27 +5,27 @@ var o_committee = {
     "Conference Chair": [["Chih-Cheng Hung", "Kennesaw State University", "Kennesaw, Georgia, USA", "chung1@kennesaw.edu"]],
     "Conference Vice-Chair": [["George A. Papadopoulos", "University of Cyprus", "Nicosia, Cyprus", "george@cs.ucy.ac.cy"]], 
     "Program Co-Chair": [["Dongwan Shin", "New Mexico Tech", "Socorro, New Mexico, USA", "doshin@nmt.edu"], 
-                        ["Seiji Isotani", "University of São Paulo", "Brazil", "xxxx@xxxx.br"]], 
-    "Tutorials Chair": [["Andreas Andreou", "University of Cyprus", "Nicosia, Cyprus", "aandreou@cs.ucy.ac.cy"]], 
+                        ["Seiji Isotani", "University of São Paulo", "São Paulo, Brazil", "isotani@ieee.org"]], 
+    "Tutorials Chair": [["Georgia Kapitsaki", "University of Cyprus", "Nicosia, Cyprus", "gkapi@cs.ucy.ac.cy"]], 
     "Publication Chair": [["Hossain Shahriar", "Kennesaw State University", "Kennesaw, Georgia, USA", "hshahria@kennesaw.edu"]], 
-    "Local Arrangement Chair": [["Constantinos Pattichis", "University of Cyprus", "Nicosia, Cyprus", "pattichi@cs.ucy.ac.cy"]], 
+    "Local Arrangement Chair": [["Christos Mettouris", "University of Cyprus", "Nicosia, Cyprus", "mettour@cs.ucy.ac.cy"]], 
     "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]], 
-    "Posters Co-Chair":[["Alessio Bechini", "University of Pisa", "Pisa, Italy", "a.bechini@ing.unipi.it"], 
-                        ["One Co-Chair from", "George A. Papadopoulos’s local committee", "Cyprus", "x@xxx.ac.cy"]],
+    "Posters Co-Chair":[[], //["Alessio Bechini", "University of Pisa", "Pisa, Italy", "a.bechini@ing.unipi.it"], 
+                        ["Achilleas Achilleos", "University of Cyprus", "Nicosia, Cyprus", "achilleas@cs.ucy.ac.cy"]],
     "SRC Chair": [["Armin R. Mikler", "University of North Texas", "Denton, Texas, USA", "mikler@unt.edu"]], 
     "Publicity Chair": [["Junyoung Heo", "Hansung University", "Seoul, Korea", "jyheo@hansung.ac.kr"]]
 };
 
-var important_dates = {"submission_date":["Sept 15, 2018"], 
+var important_dates = {"submission_date":["Sept 10, 2018"], 
     "submission_tutorial_proposal_date":["Sept 20, 2018"],
     "noti_tutorial_acceptance_date":["Oct 20, 2018"],
     "noti_paper_accept_date":["Nov 10, 2018"],
     "noti_src_accept_date": ["Nov 10, 2018"],
     "camera_ready_date": ["Nov 25, 2018"],
     "author_registration_date": ["Dec 10, 2018"],
-    "src_posters_date": ["Tuesday April 10, 2019"],
-    "posters_date": ["Wednesday April 11, 2019"],
-    "src_oral_date": ["Thursday April 12, 2019"]
+    "src_posters_date": ["Tuesday April 9, 2019"],
+    "posters_date": ["Wednesday April 10, 2019"],
+    "src_oral_date": ["Thursday April 11, 2019"]
 };
 
 function dates_html(date) {
