@@ -8,12 +8,12 @@ var o_committee = {
                         ["Seiji Isotani", "University of São Paulo", "São Paulo, Brazil", "isotani@ieee.org"]], 
     "Tutorials Chair": [["Georgia Kapitsaki", "University of Cyprus", "Nicosia, Cyprus", "gkapi@cs.ucy.ac.cy"]], 
     "Publication Chair": [["Hossain Shahriar", "Kennesaw State University", "Kennesaw, Georgia, USA", "hshahria@kennesaw.edu"]], 
-    "Local Arrangement Chair": [["Christos Mettouris", "University of Cyprus", "Nicosia, Cyprus", "mettour@cs.ucy.ac.cy"]], 
-    "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]], 
-    "Posters Co-Chair":[[], //["Alessio Bechini", "University of Pisa", "Pisa, Italy", "a.bechini@ing.unipi.it"], 
+    "Local Arrangement Chair": [["Christos Mettouris", "University of Cyprus", "Nicosia, Cyprus", "mettour@cs.ucy.ac.cy"]],     
+    "Posters Co-Chair":[["Alessio Bechini", "University of Pisa", "Pisa, Italy", "a.bechini@ing.unipi.it"], 
                         ["Achilleas Achilleos", "University of Cyprus", "Nicosia, Cyprus", "achilleas@cs.ucy.ac.cy"]],
     "SRC Chair": [["Armin R. Mikler", "University of North Texas", "Denton, Texas, USA", "mikler@unt.edu"]], 
-    "Publicity Chair": [["Junyoung Heo", "Hansung University", "Seoul, Korea", "jyheo@hansung.ac.kr"]]
+    "Publicity Chair": [["Junyoung Heo", "Hansung University", "Seoul, Korea", "jyheo@hansung.ac.kr"]],
+    "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]]
 };
 
 var important_dates = {"submission_date":["Sept 10, 2018"], 
@@ -23,6 +23,7 @@ var important_dates = {"submission_date":["Sept 10, 2018"],
     "noti_src_accept_date": ["Nov 10, 2018"],
     "camera_ready_date": ["Nov 25, 2018"],
     "author_registration_date": ["Dec 10, 2018"],
+    "stap_date": ["Dec, 2018 (TBD)"],
     "src_posters_date": ["Tuesday April 9, 2019"],
     "posters_date": ["Wednesday April 10, 2019"],
     "src_oral_date": ["Thursday April 11, 2019"]
