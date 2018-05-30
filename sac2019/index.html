@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
         .jumbotron {
-            background            : url("img2019/ucy2.jpg");
+            background-image      : url("img2019/LimassolKourion.jpg");
             background-size       : cover;
             padding               : 0;
             margin                : 0;
@@ -24,6 +24,7 @@
             background-repeat     : no-repeat;
             background-position   : center center;
             overflow              : hidden;
+            transition: background-image 1s ease-in-out;
         }
         .jumbotron h1 {
             font-size: 3em;
@@ -180,10 +181,36 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script>
+    function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+            $('<img/>')[0].src = this;
+            // Alternatively you could use:
+            // (new Image()).src = this;
+        });
+    }
+
+    var backgrounds = ['img2019/LimassolKourion.jpg', 'img2019/PaphosCastle.jpg', 'img2019/NicosiCity.jpg',
+            'img2019/kolossicastle.jpg', 'img2019/LarnacaMedievalCastle.jpg', 'img2019/limassolcity.jpg',
+            'img2019/LimassolKourionTheatre.jpg', 'img2019/NicosiaFamagustaGate.jpg'];
+
     $(function() {
         $('#nav').load('nav.html');
         $('#footer').load('footer.html');
+        
+        preload(backgrounds);
+
+        var jumbotron = $('.jumbotron');
+        var current = 0;
+
+        function nextBackground() {
+            jumbotron.css('background-image', 'url(' + backgrounds[current = ++current % backgrounds.length] + ')');
+            setTimeout(nextBackground, 5000);
+        }
+        setTimeout(nextBackground, 5000);
+        jumbotron.css('background-image', backgrounds[0]);
+
     });
 </script>
 <script src="script/data.js?ver=05032018"></script>
