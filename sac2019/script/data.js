@@ -4,7 +4,7 @@ var sac_year = '2019';
 var o_committee = {
     "Conference Chair": [["Chih-Cheng Hung", "Kennesaw State University", "Kennesaw, Georgia, USA", "chung1@kennesaw.edu"]],
     "Conference Vice-Chair": [["George A. Papadopoulos", "University of Cyprus", "Nicosia, Cyprus", "george@cs.ucy.ac.cy"]], 
-    "Program Co-Chair": [["Dongwan Shin", "New Mexico Tech", "Socorro, New Mexico, USA", "doshin@nmt.edu"], 
+    "Program Co-Chair": [["Dongwan Shin", "New Mexico Tech", "Socorro, New Mexico, USA", "dongwan.shin@nmt.edu"], 
                         ["Seiji Isotani", "University of São Paulo", "São Paulo, Brazil", "isotani@ieee.org"]], 
     "Tutorials Chair": [["Georgia Kapitsaki", "University of Cyprus", "Nicosia, Cyprus", "gkapi@cs.ucy.ac.cy"]], 
     "Publication Chair": [["Hossain Shahriar", "Kennesaw State University", "Kennesaw, Georgia, USA", "hshahria@kennesaw.edu"]], 
