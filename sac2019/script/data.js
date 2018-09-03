@@ -16,12 +16,12 @@ var o_committee = {
     "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]]
 };
 
-var important_dates = {"submission_date":["Sept 10, 2018"], 
+var important_dates = {"submission_date":["Sept 10, 2018", "Sept 24, 2018"], 
     "submission_tutorial_proposal_date":["Sept 20, 2018"],
     "noti_tutorial_acceptance_date":["Oct 20, 2018"],
-    "noti_paper_accept_date":["Nov 10, 2018"],
-    "noti_src_accept_date": ["Nov 10, 2018"],
-    "camera_ready_date": ["Nov 25, 2018"],
+    "noti_paper_accept_date":["Nov 10, 2018", "Nov 24, 2018"],
+    "noti_src_accept_date": ["Nov 10, 2018", "Nov 24, 2018"],
+    "camera_ready_date": ["Nov 25, 2018", "Dec 10, 2018"],
     "author_registration_date": ["Dec 10, 2018"],
     "stap_date": ["Dec 20, 2018"],
     "stap_noti_date": ["Jan 20, 2019"],
