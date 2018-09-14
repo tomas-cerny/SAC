@@ -16,7 +16,7 @@
         .jumbotron {
             background-image      : url("img2019/LimassolKourion.jpg");
             background-size       : cover;
-            padding               : 0;
+            padding               : 50px 0;
             margin                : 0;
             vertical-align        : middle;
             position              : relative;
@@ -31,6 +31,10 @@
             font-size: 3em;
             color       : #900020;
             font-weight : bold;
+        }
+        .jumbotron a {
+            color : #900020;
+            text-decoration: underline;
         }
         div.transbox {
             margin-left: 30px;
@@ -63,7 +67,7 @@
 
 <!------- Jumbo Title -------------->
 <div class="jumbotron text-center">
-    <div class="transbox">
+    <div class="">
         <h3>SAC <span class="sac_year"></span></h3>
         <h1>The 34th ACM/SIGAPP Symposium On Applied Computing</h1>
         <h3><p>Limassol, Cyprus<br/>
@@ -229,6 +233,10 @@
         }
         setTimeout(nextBackground, 5000);
         jumbotron.css('background-image', backgrounds[0]);
+
+        jumbotron.click(function() {
+            window.location.href = "pictures.html";
+        });
 
     });
 </script>
