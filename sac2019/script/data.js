@@ -17,7 +17,7 @@ var o_committee = {
 };
 
 var important_dates = {"submission_date":["Sept 10, 2018", "Sept 24, 2018"], 
-    "submission_tutorial_proposal_date":["Sept 20, 2018"],
+    "submission_tutorial_proposal_date":["Sept 20, 2018", "Sept 28, 2018"],
     "noti_tutorial_acceptance_date":["Oct 20, 2018"],
     "noti_paper_accept_date":["Nov 10, 2018", "Nov 24, 2018"],
     "noti_src_accept_date": ["Nov 10, 2018", "Nov 24, 2018"],
