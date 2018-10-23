@@ -13,7 +13,7 @@ var o_committee = {
                         ["Achilleas Achilleos", "University of Cyprus", "Nicosia, Cyprus", "achilleas@cs.ucy.ac.cy"]],
     "SRC Chair": [["Armin R. Mikler", "University of North Texas", "Denton, Texas, USA", "mikler@unt.edu"]], 
     "Publicity Chair": [["Junyoung Heo", "Hansung University", "Seoul, Korea", "jyheo@hansung.ac.kr"]],
-    "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]]
+    "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "sigappsac@gmail.com"]]
 };
 
 var important_dates = {"submission_date":["Sept 10, 2018", "Sept 24, 2018"], 
@@ -23,6 +23,8 @@ var important_dates = {"submission_date":["Sept 10, 2018", "Sept 24, 2018"],
     "noti_src_accept_date": ["Nov 10, 2018", "Nov 24, 2018"],
     "camera_ready_date": ["Nov 25, 2018", "Dec 10, 2018"],
     "author_registration_date": ["Dec 10, 2018"],
+    "early_registration_date": ["Mar 2, 2019"],
+    "late_registration_begin": ["Mar 3, 2019"],
     "stap_date": ["Dec 20, 2018"],
     "stap_noti_date": ["Jan 20, 2019"],
     "src_posters_date": ["Tuesday April 9, 2019"],
@@ -99,6 +101,9 @@ $(function() {
     $('#o_committee').html(make_o_committee_table(o_committee));
     for (var key in important_dates) {
         $('#' + key).html(dates_html(important_dates[key]));
+    }
+    for (var key in important_dates) {
+        $('.' + key).html(dates_html(important_dates[key]));
     }
 });
 
