@@ -13,7 +13,7 @@ var o_committee = {
                         ["Achilleas Achilleos", "University of Cyprus", "Nicosia, Cyprus", "achilleas@cs.ucy.ac.cy"]],
     "SRC Chair": [["Armin R. Mikler", "University of North Texas", "Denton, Texas, USA", "mikler@unt.edu"]], 
     "Publicity Chair": [["Junyoung Heo", "Hansung University", "Seoul, Korea", "jyheo@hansung.ac.kr"]],
-    "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "sigappsac@gmail.com"]]
+    "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]]
 };
 
 var important_dates = {"submission_date":["Sept 10, 2018", "Sept 24, 2018"], 
