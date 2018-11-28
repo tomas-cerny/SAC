@@ -92,7 +92,7 @@
 
         <p><b>The SRC Program is sponsored by</b><br/>
             <a href="https://www.microsoft.com/en-us/research/">
-                <img src="img/MSRLogoBlack.jpg" width="302" height="39" border="0"></a>
+                <img src="img/MSRLogoBlack.jpg" width="302" height="39"></a>
         </p>
 
     </div>
@@ -105,8 +105,16 @@
         <li class="list-group-item">
             <h4 class="list-group-item-heading">Updates</h4>
             <p class="list-group-item-text">
+                <a href="registration.html">Registration page</a> was open. (November 28, 2018)
+            </p>
+            <p class="list-group-item-text">
+                <a href="travel.html">Travel page</a> was open. (November 28, 2018)
+            </p>
+            <p class="list-group-item-text">
                 <a href="tutorial_program.html">Tutorials Program page</a> was open. (November 20, 2018)
             </p>
+            <p id="view_more" style="cursor:pointer" class="blue">Click here to view more ... </p>
+            <div id="updates_more" style="display:none">
             <p class="list-group-item-text">
                 Submission deadline of tutorial proposals was extended to Sept 28. </em>(Sept 19, 2018)
             </p>
@@ -137,6 +145,7 @@
             <p class="list-group-item-text">
                 <a href="">SAC 2019</a>: <em>Website</em> was open. (May 1, 2018)
             </p>
+            </div>
         </li>
 
         <li class="list-group-item">
@@ -244,6 +253,10 @@
             window.location.href = "pictures.html";
         });
 
+        $('#view_more').click(function() {
+            $('#updates_more').show();
+            $('#view_more').hide();
+        });
     });
 </script>
 <script src="script/data.js?ver=11182018"></script>
