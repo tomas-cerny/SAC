@@ -1,0 +1,187 @@
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #900020;
+        background: #FFEDCC;
+    }
+
+    h1.title {
+        color: #900020;
+        font-weight: bold;
+        text-decoration: dotted;
+    }
+    
+    h3.subtitle {
+        color:#900020;
+        font-weight: bold;
+    }
+
+    .initial {
+        font-size: 2em;
+    }
+
+    .warning {
+        color: blue;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section_title {
+        margin-top: 50px;
+        padding: 20px;
+        border: 1px solid purple;
+    }
+
+    .list-group-item {
+        border-color: purple;
+    }
+    .list-item-heading {
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .green {
+        color: green;
+    }
+    .red {
+        color: red;
+    }
+    .blue {
+        color: blue;
+    }
+    .black {
+        color: black;
+    }
+
+    /* Add a dark background color with a little bit see-through */
+    .navbar {
+        margin-bottom: 0;
+        background-color: #8000FF;
+        border: 0;
+        font-weight: bold;
+        font-size: 14px !important;
+        letter-spacing: 2px;
+        opacity:1.0;
+    }
+
+    /* Add a gray color to all navbar links */
+    .navbar li a, .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+    }
+
+    /* On hover, the links will turn white */
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
+
+    /* The active link */
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color:rebeccapurple !important;
+    }
+
+    /* Remove border color from the collapsible button */
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+
+    /* Dropdown */
+    .open .dropdown-toggle {
+        color: #fff ;
+        background-color: rebeccapurple !important;
+    }
+
+    /* Dropdown links */
+    .dropdown-menu li a {
+        color: #000 !important;
+    }
+
+    /* On hover, the dropdown links will turn red */
+    .dropdown-menu li a:hover {
+        background-color: rebeccapurple !important;
+    }
+
+    nav a.disabled {
+        pointer-events: none;
+        cursor: default;
+        color: darkgrey !important;
+    }
+
+</style>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!-- for collapsing navbar -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">Logo</a>-->
+            <a href="http://www.acm.org" target="_blank">
+                <img src="img/acmlogos.png" class="navbar-brand" style="padding:1px;" alt="ACM">
+            </a>
+            <a class="navbar-brand" href="index.html">SAC2020</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav ">
+                <!--li><a href="index.html">HOME</a></li-->
+                <li><a href="organization.html">ORGANIZATION</a></li>
+                <!--li><a href="tracks.html">TECHNICAL TRACKS</a></li>                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">SUBMISSION
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="submission.html">Regular Paper</a></li>
+                        <li><a href="submission_src.html">SRC Submission</a></li>
+                        <li><a href="authorkit.html">Author Kit</a></li>
+                        <li class="divider"></li>
+                        <li><a href="tutorial.html">Tutorial Proposals</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROGRAM
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="program.html">Technical Program</a></li>
+                        <li><a href="posters.html">Posters Program</a></li>
+                        <li><a href="src_program.html">SRC Program</a></li>
+                        <li><a href="tutorial_program.html">Tutorials Program</a></li>
+                        <li><a href="keynote.html">Keynote Speakers</a></li>
+                    </ul>
+                </li>          
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">REGISTRATION
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="travel.html">Travel Information</a></li>
+                        <li><a href="accommodation.html">Accommodation</a></li>
+                        <li><a href="stap.html">SIGAPP Travel Awards</a></li>
+                    </ul>
+                </li-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">HISTORY
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="//www.sigapp.org/sac/SAC_STATS.pdf" target="_blank">SAC Stats</a></li>
+                        <li><a href="//www.sigapp.org/sac/SAC_History.pdf" target="_blank">SAC History</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.acm.org/sigapp/" style="padding: 7px;">
+                    <img src="img/SIGAPP-LOGO-Small.jpg"  alt="SIGAPP">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
