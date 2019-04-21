@@ -67,23 +67,20 @@
 
 <!------- Jumbo Title -------------->
 <div class="jumbotron text-center">
-    <div class="">
-        <h3>SAC <span class="sac_year"></span></h3>
-        <h1>The 35th ACM/SIGAPP Symposium On Applied Computing</h1>
-        <h3><p>Brno, Czech Republic<br/>
-            March 30-April 3, 2020</h3>
+    <h3>SAC <span class="sac_year"></span></h3>
+    <h1>The 35th ACM/SIGAPP Symposium On Applied Computing</h1>
+    <p id="location">Brno, Czech Republic<br/>
+        March 30-April 3, 2020</p>
 
-        <p><b>Sponsored by</b><br/>
-            <a href="http://www.sigapp.org/" target="_blank">
-                ACM Special Interest Group on Applied Computing (SIGAPP)</a>
-        </p>
+    <p><b>Sponsored by</b><br/>
+        <a href="http://www.sigapp.org/" target="_blank">
+            ACM Special Interest Group on Applied Computing (SIGAPP)</a>
+    </p>
 
-        <p><b>The SRC Program is sponsored by</b><br/>
-            <a href="https://www.microsoft.com/en-us/research/">
-                <img src="img/MSRLogoBlack.jpg" width="302" height="39"></a>
-        </p>
-
-    </div>
+    <p><b>The SRC Program is sponsored by</b><br/>
+        <a href="https://www.microsoft.com/en-us/research/">
+            <img src="img/MSRLogoBlack.jpg" width="302" height="39"></a>
+    </p>
 </div>
 
 <div class="container">
@@ -95,6 +92,10 @@
             
             <p class="list-group-item-text">
                 <a href="">SAC 2020</a>: <em>Website</em> was open. (April 9, 2019)
+            </p>
+
+            <p class="list-group-item-text">
+                <a href="tracks.html">Track proposals submission</a> was open. (April 21, 2019)
             </p>
 
         </li>
@@ -150,10 +151,9 @@
     <div class="col-sm-8">
         <table class="table">
             <tbody>
-            <tr><td>May 25, 2019</td><td>Submission of track proposals</td></tr>
-            <tr><td>Jun 8, 2019</td><td>Notification of acceptance/rejection of track proposals</td></tr>
-            <tr><td>Jun 15, 2019</td><td>Submission of track CFPs to the Program Chairs</td></tr>
-            <tr><td>Jun 22, 2019</td><td>Dissemination of CFP and website for each track</td></tr>
+            <tr><td>May 6, 2019</td><td>Submission of track proposals</td></tr>
+            <tr><td>May 20, 2019</td><td>Notification of acceptance/rejection of track proposals</td></tr>
+            <tr><td>May 27, 2019</td><td>Submission of track CFPs to the Program Chairs</td></tr>
             <tr><td colspan="2"></td></tr>
             <tr><td><span id="submission_date"></span></td><td>Submission of regular papers and SRC research abstracts</td></tr>
             <tr><td><span id="submission_tutorial_proposal_date"></span></td><td>Submission of Tutorial Proposals</td></tr>
@@ -172,8 +172,9 @@
         </table>
     </div>
     <div class="col-sm-4">
-        <!--p>Call for Track Proposals        </p>
-        <p>Call for Papers and Tutorials</p>
+        <p><a href="file2020/SAC2020-CFT.pdf" target="_blank">Call for Track Proposals</a><br/>
+            (Upload your proposal <strong><em><a href="tracks.html">here</a></em></strong>)</p>
+        <!--p>Call for Papers and Tutorials</p>
         <p>Call for Student Research Abstracts</p>
         <p>Track Chairs Guidelines</p>
         <p>SAC Hosting Proposal Guidelines (TBD)</p>
@@ -189,16 +190,16 @@
 
 <script>
     $(function() {
-        $('#nav').load('nav.html?ver=03102019');
+        $('#nav').load('nav.html?ver=04212019');
         $('#footer').load('footer.html?ver=2019');
         
-        var jumbotron = $('.jumbotron');
+        var jumbotron = $('#location');
         jumbotron.click(function() {
             window.location.href = "https://en.wikipedia.org/wiki/Brno";
         });
     });
 </script>
-<script src="script/data.js?ver=04092019"></script>
+<script src="script/data.js?ver=04212019"></script>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-591b37ff2acbb9a6"></script>
 

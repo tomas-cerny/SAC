@@ -17,17 +17,17 @@ var o_committee = {
     "Treasurer":[["John Kim", "Utica College", "Utica, New York, USA", "editoracr@gmail.com"]]
 };
 
-var important_dates = {"submission_date":["Sept 10, 2019"], 
-    "submission_tutorial_proposal_date":["Sept 20, 2019"],
+var important_dates = {"submission_date":["Sept 15, 2019"], 
+    "submission_tutorial_proposal_date":["Sept 25, 2019"],
     "noti_tutorial_acceptance_date":["Oct 20, 2019"],
     "noti_paper_accept_date":["Nov 10, 2019"],
     "noti_src_accept_date": ["Nov 10, 2019"],
     "camera_ready_date": ["Nov 25, 2019"],
-    "author_registration_date": ["Dec 10, 2019"],
-    "early_registration_date": ["Mar 1, 2020"],
-    "late_registration_begin": ["Mar 2, 2020"],
-    "stap_date": ["Dec 20, 2019"],
-    "stap_noti_date": ["Jan 20, 2020"],
+    "author_registration_date": ["TBD"],
+    "early_registration_date": ["TBD"],
+    "late_registration_begin": ["TBD"],
+    "stap_date": ["TBD"],
+    "stap_noti_date": ["TBD"],
     "src_posters_date": ["Tuesday March 31, 2020"],
     "posters_date": ["Wednesday April 1, 2020"],
     "src_oral_date": ["Thursday April 2, 2020"]
