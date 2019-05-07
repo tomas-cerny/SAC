@@ -12,31 +12,51 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">  -->
     <style>
+
         .jumbotron {
-            background-image      : url("https://upload.wikimedia.org/wikipedia/commons/0/08/Brno_View_from_Spilberk_131.JPG");
-            background-size       : cover;
+            background-image      : url("img/brno2.jpg");
+            background-size       : cover, contain;
             padding               : 50px 0;
             margin                : 0;
             vertical-align        : middle;
             position              : relative;
             background-attachment : fixed;
             background-repeat     : no-repeat;
-            background-position   : center center;
             overflow              : hidden;
-            transition: background-image 2s ease-in-out;
-            -webkit-transition: background-image 2s ease-in-out;
-
-            background-position: center -248px;
+            background-position: center -270px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: left;
+            padding: 95px 120px;
         }
         .jumbotron h1 {
-            font-size: 3em;
-            color       : #900020;
+            font-size: 4em;
+            color       : #ffffff;
             font-weight : bold;
         }
         .jumbotron a {
-            color : #900020;
+            color : #ffffff;
             text-decoration: underline;
+            font-weight: 300;
+        }
+
+        b {
+            font-weight: 500;
+        }
+
+        .jumbotron h3{
+            font-weight: 500;
+        }
+
+        .jumbotron h3 a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .jumbotron p, h2, h3 {
+            color : #ffffff;
+            font-weight: 300;
         }
         div.transbox {
             margin-left: 30px;
@@ -44,8 +64,7 @@
             margin-top: 80px;
             margin-bottom: 30px;
             background-color: #ffffff;
-            border: 1px solid black;
-            opacity: 0.6;
+            opacity: 0.0;
             filter: alpha(opacity=60); /* For IE8 and earlier */
         }
         div.transbox p {
@@ -55,14 +74,10 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #900020;
-            background: #FFEDCC;
+            color: #444444;
+            background: rgb(247, 247, 247);
         }
-        
-        .transbg {
-            background-color: #7e7e7ea2;
-        }
+
         
     </style>
 </head>
@@ -74,19 +89,19 @@
 
 <!------- Jumbo Title -------------->
 <div class="jumbotron text-center" >
-    <h3>SAC <span class="sac_year"></span></h3>
-    <h1><span class="transbg">The 35th ACM/SIGAPP Symposium On Applied Computing</span></h1>
-    <p id="location"><span class="transbg">Brno, Czech Republic<br/>
-        March 30-April 3, 2020</span></p>
+    <h1><span class="transbg">The&nbsp35th&nbspACM/SIGAPP Symposium On&nbspApplied Computing</span></h1>
+    <h3 id="location"><a href="https://en.wikipedia.org/wiki/Brno" target="_blank">Brno, Czech Republic</a><br/>
+        March 30-April 3, 2020</h3>
 
-    <p><b>Sponsored by</b><br/>
-        <a href="http://www.sigapp.org/" class="transbg" target="_blank">
-            ACM Special Interest Group on Applied Computing (SIGAPP)</a>
+        <br/><br/>
+    <p>sponsored by<br/>
+        <b><a href="http://www.sigapp.org/" class="transbg" target="_blank">
+            ACM Special Interest Group on Applied Computing (SIGAPP)</a></b>
     </p>
 
-    <p><b>The SRC Program is sponsored by</span></b><br/>
-        <a href="https://www.microsoft.com/en-us/research/">
-            <img src="img/MSRLogoBlack.jpg" width="302" height="39"></a>
+    <p>The SRC Program sponsored by</span><br/>
+        <a href="https://www.microsoft.com/en-us/research/" target="_blank">
+            <img src="img/MSRLogoInv.png" width="240"></a>
     </p>
 </div>
 
@@ -153,7 +168,7 @@
 </div>
 
 <div class="container">
-    <h3 class="text-center">IMPORTANT DATES</h3>
+    <h3 class="text-dates">IMPORTANT DATES</h3>
 
     <div class="col-sm-8">
         <table class="table">
@@ -200,10 +215,10 @@
         $('#nav').load('nav.html?ver=04212019');
         $('#footer').load('footer.html?ver=2019');
         
-        var jumbotron = $('#location');
-        jumbotron.click(function() {
-            window.location.href = "https://en.wikipedia.org/wiki/Brno";
-        });
+        // var jumbotron = $('#location');
+        // jumbotron.click(function() {
+        //     window.location.href = "https://en.wikipedia.org/wiki/Brno";
+        // });
     });
 </script>
 <script src="script/data.js?ver=04212019"></script>

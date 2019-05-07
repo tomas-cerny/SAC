@@ -1,137 +1,174 @@
 <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #900020;
-        background: #FFEDCC;
-    }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #525252;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
 
-    h1.title {
-        color: #900020;
-        font-weight: bold;
-        text-decoration: dotted;
-    }
-    
-    h3.subtitle {
-        color:#900020;
-        font-weight: bold;
-    }
+  h1.title {
+    color: #263e53;
+    font-weight: bold;
+    text-decoration: dotted;
+  }
 
-    .initial {
-        font-size: 2em;
-    }
+  h3.subtitle {
+    color: #263e53;
+    font-weight: bold;
+  }
 
-    .warning {
-        color: blue;
-    }
+  .initial {
+    font-size: 2em;
+  }
 
-    .container {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  .warning {
+    color: blue;
+  }
 
-    .section_title {
-        margin-top: 50px;
-        padding: 20px;
-        border: 1px solid purple;
-    }
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    .list-group-item {
-        border-color: purple;
-    }
-    .list-item-heading {
-        color: black;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-    .green {
-        color: green;
-    }
-    .red {
-        color: red;
-    }
-    .blue {
-        color: blue;
-    }
-    .black {
-        color: black;
-    }
+  .section_title {
+    margin-top: 50px;
+  }
 
-    /* Add a dark background color with a little bit see-through */
-    .navbar {
-        margin-bottom: 0;
-        background-color: #8000FF;
-        border: 0;
-        font-weight: bold;
-        font-size: 14px !important;
-        letter-spacing: 2px;
-        opacity:1.0;
-    }
+  .list-item-heading {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .green {
+    color: green;
+  }
+  .red {
+    color: red;
+  }
+  .blue {
+    color: blue;
+  }
+  .black {
+    color: black;
+  }
 
-    /* Add a gray color to all navbar links */
-    .navbar li a, .navbar .navbar-brand {
-        color: #d5d5d5 !important;
-    }
+  .list-group {
+    box-shadow: 0px 5px 14px #ececec;
+  }
 
-    /* On hover, the links will turn white */
-    .navbar-nav li a:hover {
-        color: #fff !important;
-    }
+  .list-group-item {
+    border: 1px solid #eaeaea;
+    line-height: 150%;
+    padding: 21px 32px;
+  }
 
-    /* The active link */
-    .navbar-nav li.active a {
-        color: #fff !important;
-        background-color:rebeccapurple !important;
-    }
+  .list-group-item-text {
+    line-height: 1.5;
+  }
 
-    /* Remove border color from the collapsible button */
-    .navbar-default .navbar-toggle {
-        border-color: transparent;
-    }
+  .text-dates {
+    color: #2b6faa;
+    margin-left: 21px;
+  }
+  /* Add a dark background color with a little bit see-through */
+  .navbar {
+    margin-bottom: 0;
+    background-color: rgb(245, 245, 245);
+    border: 0;
+    font-weight: bold;
+    font-size: 14px !important;
+    letter-spacing: 2px;
+    opacity: 1;
+    box-shadow: 0px -0px 13px #0006;
+  }
 
-    /* Dropdown */
-    .open .dropdown-toggle {
-        color: #fff ;
-        background-color: rebeccapurple !important;
-    }
+  /* Add a gray color to all navbar links */
+  .navbar li a,
+  .navbar .navbar-brand {
+    color: #313131 !important;
+  }
 
-    /* Dropdown links */
-    .dropdown-menu li a {
-        color: #000 !important;
-    }
+  /* On hover, the links will turn white */
+  .navbar-nav li a:hover {
+    /* color: #1d76ba !important; */
+    background-color: rgb(230, 230, 230) !important;
+  }
 
-    /* On hover, the dropdown links will turn red */
-    .dropdown-menu li a:hover {
-        background-color: rebeccapurple !important;
-    }
+  /* The active link */
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #014a81 !important;
+  }
 
-    nav a.disabled {
-        pointer-events: none;
-        cursor: default;
-        color: darkgrey !important;
-    }
+  /* Remove border color from the collapsible button */
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
 
+  /* Dropdown */
+  .open .dropdown-toggle {
+    /* color: #fff;
+    background-color: #014a81 !important; */
+  }
+
+  /* Dropdown links */
+  .dropdown-menu li a {
+    color: rgb(36, 36, 36) !important;
+  }
+
+  /* On hover, the dropdown links will turn red */
+  .dropdown-menu li a:hover {
+    color: #000000 !important;
+    background-color: rgb(230, 230, 230) !important;
+  }
+
+  .navbar-brand {
+    margin-left: -10px !important;
+  }
+
+  .dropdown-menu {
+    background-color: whitesmoke;
+  }
+
+  nav a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: darkgrey !important;
+  }
 </style>
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <!-- for collapsing navbar -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!--<a class="navbar-brand" href="#">Logo</a>-->
-            <a href="http://www.acm.org" target="_blank">
-                <img src="img/acmlogos.png" class="navbar-brand" style="padding:1px;" alt="ACM">
-            </a>
-            <a class="navbar-brand" href="index.html">SAC2020</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav ">
-                <!--li><a href="index.html">HOME</a></li-->
-                <li><a href="organization.html">ORGANIZATION</a></li>
-                <li><a href="tracks.html">TECHNICAL TRACKS</a></li>                
-                <!--li class="dropdown">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- for collapsing navbar -->
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--<a class="navbar-brand" href="#">Logo</a>-->
+      <a href="http://www.acm.org" target="_blank">
+        <img
+          src="img/acmlogos.png"
+          class="navbar-brand"
+          style="padding:1px;"
+          alt="ACM"
+        />
+      </a>
+      <a class="navbar-brand" href="index.html">SAC2020</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav ">
+        <!--li><a href="index.html">HOME</a></li-->
+        <li><a href="organization.html">ORGANIZATION</a></li>
+        <li><a href="tracks.html">TECHNICAL TRACKS</a></li>
+        <!--li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">SUBMISSION
                         <span class="caret"></span>
                     </a>
@@ -166,22 +203,37 @@
                         <li><a href="stap.html">SIGAPP Travel Awards</a></li>
                     </ul>
                 </li-->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">HISTORY
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="//www.sigapp.org/sac/SAC_STATS.pdf" target="_blank">SAC Stats</a></li>
-                        <li><a href="//www.sigapp.org/sac/SAC_History.pdf" target="_blank">SAC History</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+            >HISTORY
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="//www.sigapp.org/sac/SAC_STATS.pdf" target="_blank"
+                >SAC Stats</a
+              >
+            </li>
+            <li>
+              <a href="//www.sigapp.org/sac/SAC_History.pdf" target="_blank"
+                >SAC History</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://www.acm.org/sigapp/" style="padding: 7px;">
-                    <img src="img/SIGAPP-LOGO-Small.jpg"  alt="SIGAPP">
-                </a></li>
-            </ul>
-        </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a
+            href="http://www.acm.org/sigapp/"
+            style="padding: 7px;"
+            target="_blank"
+          >
+            <img src="img/SIGAPP-LOGO-Small.jpg" alt="SIGAPP" />
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

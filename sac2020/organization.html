@@ -1,95 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>SAC 2018</title>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="https://www.acm.org/images/favicon.ico?v=10">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="https://www.acm.org/images/favicon.ico?v=10"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
 
     <style>
-        .col-sm-4,
-        .col-sm-6 {
-            border: 1px solid purple;
-            margin-left: -1px;
-            margin-bottom: -1px;
-            background-color: #ffffff;
-        }
+      .title_padd {
+        padding: 42px 0px 0px 110px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      html {
+        height: 100%;
+      }
+      .container {
+        margin-bottom: 200px !important;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="nav"></div>
 
+    <div class="section_title">
+      <h1 class="title title_padd">
+        <span class="initial">O</span>RGANIZATION
+        <span class="glyphicon glyphicon-user"></span>
+      </h1>
+    </div>
 
-<div id="nav">
-</div>
-
-<div class="section_title">
-    <h1 class="title"><span class="initial">O</span>RGANIZATION <span class="glyphicon glyphicon-user"></span></h1>
-</div>
-
-<!--div class="container">
+    <!--div class="container">
     <h3 class="subtitle">ORGANIZING COMMITTEE</h3>
 
     <div id="o_committee"></div>
 </div-->
 
-<div class="container">
-    <h3 class="subtitle">STEERING COMMITTEE</h3>
+    <div class="container">
+      <h3 class="subtitle">STEERING COMMITTEE</h3>
 
-    <div class="row">
+      <div class="row">
         <div class="col-sm-4">
-            <p>Barrett R. Bryant<br/>
-                University of North Texas<br/>
-                Denton, Texas, USA<br/>
-                <a href="mailto:Barrett.Bryant@unt.edu">Barrett.Bryant@unt.edu</a></p>
+          <p>
+            Barrett R. Bryant<br />
+            University of North Texas<br />
+            Denton, Texas, USA<br />
+            <a href="mailto:Barrett.Bryant@unt.edu">Barrett.Bryant@unt.edu</a>
+          </p>
         </div>
 
         <div class="col-sm-4">
-            <p>Hisham M. Haddad<br/>
-                Kennesaw State University<br/>
-                Kennesaw, Georgia, USA<br/>
-                <a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a></p>
+          <p>
+            Hisham M. Haddad<br />
+            Kennesaw State University<br />
+            Kennesaw, Georgia, USA<br />
+            <a href="mailto:hhaddad@kennesaw.edu">hhaddad@kennesaw.edu</a>
+          </p>
         </div>
 
         <div class="col-sm-4">
-            <p>Sascha Ossowski<br/>
-                University Rey Juan Carlos<br/>
-                Madrid, Spain<br/>
-                <a href="mailto:sascha.ossowski@urjc.es">sascha.ossowski@urjc.es</a></p>
+          <p>
+            Sascha Ossowski<br />
+            University Rey Juan Carlos<br />
+            Madrid, Spain<br />
+            <a href="mailto:sascha.ossowski@urjc.es">sascha.ossowski@urjc.es</a>
+          </p>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <p>
+            Sung Y. Shin<br />
+            South Dakota State University <br />
+            Brookings, South Dakota, USA<br />
+            <a href="mailto:Sung.Shin@sdstate.edu">Sung.Shin@sdstate.edu</a>
+          </p>
+        </div>
+
+        <div class="col-sm-6">
+          <p>
+            Roger L. Wainwright <b>(Chair)</b><br />
+            University of Tulsa<br />
+            Tulsa, Oklahoma, USA<br />
+            <a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6">
-            <p>Sung Y. Shin<br/>
-                South Dakota State University <br/>
-                Brookings, South Dakota, USA<br/>
-                <a href="mailto:Sung.Shin@sdstate.edu">Sung.Shin@sdstate.edu</a>
-            </p>
-        </div>
+    <div id="footer"></div>
 
-        <div class="col-sm-6">
-            <p>Roger L. Wainwright <b>(Chair)</b><br/>
-                University of Tulsa<br/>
-                Tulsa, Oklahoma, USA<br/>
-                <a href="mailto:rogerw@utulsa.edu">rogerw@utulsa.edu</a></p>
-        </div>
-
-    </div>
-
-</div>
-
-<div id="footer">
-</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-    $(function() {
-        $('#nav').load('nav.html?ver=04212019');
-        $('#footer').load('footer.html?ver=2019');
-    });
-</script>
-<script src="script/data.js?ver=11092018"></script>
-</body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        $("#nav").load("nav.html?ver=04212019");
+        $("#footer").load("footer.html?ver=2019");
+      });
+    </script>
+    <script src="script/data.js?ver=11092018"></script>
+  </body>
 </html>
